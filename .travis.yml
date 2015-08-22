@@ -11,10 +11,3 @@ before_install: chmod +x ./prepare-couchbase.sh ./stop-couchbase.sh ./gradlew
 install: ./prepare-couchbase.sh
 
 after_script: ./stop-couchbase.sh
-
-# save directories of installed couchbase to reduce build time
-cache:
-  directories:
-  - $HOME/opt
-  - $HOME/etc
-  - $HOME/usr
