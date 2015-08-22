@@ -5,7 +5,7 @@ jdk:
 #run in container based hardware
 sudo: false
 
-before_install: chmod +x ./prepare-couchbase.sh ./stop-couchbase.sh
+before_install: chmod +x ./prepare-couchbase.sh ./stop-couchbase.sh ./gradlew
 
 # magic
 install: ./prepare-couchbase.sh
