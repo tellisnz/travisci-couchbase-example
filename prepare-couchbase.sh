@@ -4,7 +4,7 @@ if [ ! -d "$HOME/opt/couchbase" ] ; then
 
   wget http://packages.couchbase.com/releases/4.0.0-beta/couchbase-server-enterprise_4.0.0-beta-ubuntu14.04_amd64.deb
 
-  dpkg-deb -x couchbase-server-enterprise_4.0.0-beta-ubuntu14.04_amd64.deb
+  dpkg-deb -x couchbase-server-enterprise_4.0.0-beta-ubuntu14.04_amd64.deb $HOME
 
   cd opt/couchbase
 
