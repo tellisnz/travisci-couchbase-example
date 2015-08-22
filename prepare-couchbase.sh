@@ -10,13 +10,12 @@ if [ ! -d "$HOME/opt/couchbase" ] ; then
 
   cd $HOME/opt/couchbase
 
-  ls -lrt
-
   ./bin/install/reloc.sh `pwd`
 fi
 
 ./bin/couchbase-server -- -noinput -detached
 
-sleep 20
 
-./bin/couchbase-cli cluster-init -c 127.0.0.1:8091  --cluster-init-username=Administrator --cluster-init-password=password --cluster-init-port=8091 --cluster-init-ramsize=1024
+ls -lrt
+
+#./bin/couchbase-cli cluster-init -c 127.0.0.1:8091  --cluster-init-username=Administrator --cluster-init-password=password --cluster-init-port=8091 --cluster-init-ramsize=1024
