@@ -1,0 +1,18 @@
+language: java
+jdk:
+  - oraclejdk8
+
+#run in container based hardware
+sudo: false
+
+# magic
+install: ./prepare-couchbase.sh
+
+after_script: ./stop-couchbase.sh
+
+# save directories of installed couchbase to reduce build time
+cache:
+  directories:
+  - $HOME/opt
+  - $HOME/etc
+  - $HOME/usr
