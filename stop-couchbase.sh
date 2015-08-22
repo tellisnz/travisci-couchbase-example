@@ -1,7 +1,5 @@
 #!/bin/bash
 
+$HOME/opt/couchbase/bin/couchbase-server -k
 
-cd $HOME/opt/couchbase
-cat ./var/lib/couchbase/logs/*.log
-
-./bin/couchbase-server -k
+ls -lrt $HOME/opt/couchbase/var/lib/couchbase/logs

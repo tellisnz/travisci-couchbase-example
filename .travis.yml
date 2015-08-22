@@ -1,3 +1,9 @@
+addons:
+  artifacts:
+    paths:
+      - $(ls $HOME/opt/couchbase/var/lib/couchbase/logs/* | tr "\n" ":")
+    s3_region: us-west-2
+
 language: java
 jdk:
   - oraclejdk8
