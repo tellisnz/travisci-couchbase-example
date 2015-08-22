@@ -4,9 +4,10 @@ if [ ! -d "$HOME/opt/couchbase" ] ; then
 
   echo "Starting in `pwd`"
 
-  wget http://packages.couchbase.com/releases/4.0.0-beta/couchbase-server-enterprise_4.0.0-beta-ubuntu14.04_amd64.deb
+  wget http://packages.couchbase.com/releases/3.1.0/couchbase-server-enterprise_3.1.0-ubuntu12.04_amd64.deb
+  #wget http://packages.couchbase.com/releases/4.0.0-beta/couchbase-server-enterprise_4.0.0-beta-ubuntu14.04_amd64.deb
 
-  dpkg-deb -x couchbase-server-enterprise_4.0.0-beta-ubuntu14.04_amd64.deb $HOME
+  dpkg-deb -x couchbase-server-enterprise_3.1.0-ubuntu12.04_amd64.deb $HOME
 
   cd $HOME/opt/couchbase
   rm ./var/lib/couchbase/logs/*
