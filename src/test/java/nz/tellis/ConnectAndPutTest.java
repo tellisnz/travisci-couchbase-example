@@ -23,7 +23,7 @@ public class ConnectAndPutTest {
     @Before
     public void connectToCouchbase() {
         cluster = CouchbaseCluster.create();
-        bucket = cluster.openBucket();
+        bucket = cluster.openBucket("test");
     }
 
     @Test
