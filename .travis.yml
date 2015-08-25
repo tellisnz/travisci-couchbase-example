@@ -13,4 +13,6 @@ before_install: chmod +x ./prepare-couchbase.sh ./stop-couchbase.sh ./gradlew
 # magic
 install: ./prepare-couchbase.sh
 
+script: gradle build
+
 after_script: ./stop-couchbase.sh
